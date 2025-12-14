@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu{
+    background-color: #EEEFF1;
+}
+.container{
+    max-width: 1240px;
+    padding: 0px;
+    margin: 0 auto;
+}
+.menu__inner{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 358px;
+}
+.pages{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.page{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.page li a{
+    color:#1B1B1D;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+.buttons_basket_vouchers{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.buttons_basket_vouchers a{
+    text-transform: uppercase;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.basket, .gift_vouchers {
+    transition: all 0.25s ease;
+}
+
+.basket{
+    padding: 16px;
+    border-radius: 100%; 
+    background: #FFFFFF;
+    cursor: pointer; 
+}
+.basket img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.basket:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.basket:active {
+    transform: scale(0.92);
+}
+.gift_vouchers{
+    padding: 15px 30px;
+    background: #1B1B1D;
+    border-radius: 63px;
+    cursor: pointer; 
+    transform: translateY(0);
+}
+.gift_vouchers:hover {
+    background: #64646A;
+    transform: scale(1.05);
+}
+.gift_vouchers:active {
+    transform: scale(0.93);
+    background: #1B1B1D;
+}
+.page a:hover {
+    transform: scale(1.13);
+}
+.page a:active {
+    transform: scale(0.93);
+    color: #64646A;
+}
+
+
+
+/* Стили для бургера в адаптивной версии */
+.burger-menu {
+    display: none; 
+}
+
+.burger-icon {
+    cursor: pointer;
+}
+
+/* Стили для открываемой панели */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
