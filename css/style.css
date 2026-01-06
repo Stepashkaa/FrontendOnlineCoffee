@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
 }
 .menu__inner{
-    padding: 24px 0;
+    padding: 24px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +110,305 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+/*Alowishus Delicious Coffee */
 
+.alowishus_delicious_coffee{
+    background-color: #EEEFF1;
+    
+}
+.alowishus_delicious_coffee .container{
+    padding-top: 124px;
+    padding-bottom: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    gap: 40px; 
+}
+
+.text_delicious{
+    color:#1B1B1D;
+    font-size: 124px;
+    font-weight: 800;
+    line-height: 140px;
+    margin-bottom: 30px;
+}
+
+.text_description{
+    color:#64646A;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    max-width: 530px;
+}
+
+.text_up{
+    margin-bottom: 60px;
+}
+
+.button_down{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.download_app a{
+    text-transform: uppercase;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.button_down .gift_vouchers{
+    padding: 20px 40px;
+    border-radius: 126px;
+}
+
+.button_shop_coffee a{
+    position: relative;
+    text-transform: uppercase;
+    color:#1B1B1D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* подчёркивание */
+.button_shop_coffee a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #1B1B1D;
+
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.button_shop_coffee a:hover::after{
+    transform: scaleX(0.6);
+}
+
+.button_shop_coffee a:active{
+    transform: scale(0.96);
+    opacity: 0.85;
+}
+
+.button_shop_coffee a:active::after{
+    transform: scaleX(0.3);
+}
+
+
+/*Правый блок с фотками*/
+
+.block_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_visual{
+    position: relative;
+    width: 680px;
+    height: 710px;
+}
+
+/* стакан */
+.hero_cup{
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 680px;
+    height: auto;
+    z-index: 2;
+}
+
+/* линии */
+.hero_lines{
+    position: absolute;
+    right: 50px;
+    top: 130px;
+    width: 465px;
+    height: auto;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* медаль */
+.hero_medal{
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 140px;
+    height: auto;
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* карточка рейтинга */  
+.hero_rating{
+    position: absolute;
+    top: 420px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    animation: float 6s ease-in-out infinite;
+}
+
+/* звёзды   */
+.hero_stars{
+    display: flex;
+    margin-bottom: 12px;
+}
+.star_fill{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+/* текст в карточке */
+.hero_rating_text{
+    font-size: 19px;
+    line-height: 26px;
+    color: #64646A;
+    font-weight: 400;
+}
+
+@keyframes float{
+    0%,100%{ transform: translateY(0); }
+    50%{ transform: translateY(-8px); }
+}
+
+
+
+/*Explore Our Alowishus*/
+.explore_our_alowishus{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.title_text_explore{
+    text-align: center;
+    margin: 0 auto 24px;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 800;
+    color: #1B1B1D;
+}
+
+.description_explore_alowishus{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;  
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #64646A;
+}
+
+.explore_inner_card{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 30px 60px rgba(163, 168, 178, 0.15);
+    border-radius: 24px;
+    min-height: 540px;
+}
+
+.card_title{
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #1B1B1D;
+    margin-bottom: 15px;
+}
+
+.card_description{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #64646A;
+    max-width: none;
+    margin-bottom: 60px;
+}
+
+.card_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.card_button{
+    margin-top: auto;     /* прижали вниз */
+    display: flex;
+    justify-content: center;
+    min-width: 225px;
+}
+
+.card_button .gift_vouchers{
+    padding: 15px 40px;
+}
+
+
+
+/*Order Your Favourite Coffee*/
+
+
+
+
+/* адаптив: чтобы не ломалось на мобилке */
+@media (max-width: 900px){
+  .alowishus_delicious_coffee .container{
+    grid-template-columns: 1fr;
+  }
+
+  .block_right{
+    justify-content: center;
+  }
+
+  .hero_visual{
+    width: min(520px, 100%);
+    height: 420px;
+  }
+
+  .hero_cup{
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+
+@media (max-width: 900px){
+    .alowishus_delicious_coffee .container{
+      grid-template-columns: 1fr;
+    }
+    .block_right{
+      justify-content: center;
+      min-height: auto;
+    }
+}
 /* Стили для бургера в адаптивной версии */
 .burger-menu {
     display: none; 
